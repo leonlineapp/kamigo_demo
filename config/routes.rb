@@ -24,7 +24,12 @@ Rails.application.routes.draw do
   get "menu", to: "home#menu"
   get "目錄", to: "home#menu"
 
+  # 問候
   get "你好嗎", to: "home#greeting"
+
+
+  # 骰子
+  get "骰", to: "home#dice"
 
   # 查天氣
   get "(*location)天氣(*other)", to: "weather#show"

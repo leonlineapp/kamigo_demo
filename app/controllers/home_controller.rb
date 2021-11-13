@@ -20,6 +20,16 @@ class HomeController < ApplicationController
   def test
   end
 
+  def dice
+    array = [1, 2, 3, 4, 5, 6]
+    @dice_result = array.sample
+  end
+
+
+
+
+
+
   private
 
   def get_profile(user_id)
