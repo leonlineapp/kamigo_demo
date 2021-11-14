@@ -1,10 +1,13 @@
 <%= raw(
- Kamiflex.json(self) do
-  alt_text "hello world!"
-  bubble do
-    body do
-      text "這是文字方塊，但你點點看", action: message_action("就算是文字方塊，照樣可以觸發 Action")
+  Kamiflex.json(self) do
+    alt_text "hello world!"
+    bubble do
+      body **border("#FF0000") do
+        horizontal_box **border("#0000FF") do
+          text "Text1"
+          text "Text2"
+        end
+      end
     end
-  end
- end
+   end   
 )%>

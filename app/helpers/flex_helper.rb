@@ -49,4 +49,12 @@ module FlexHelper
       text "#{n}.0", color: "#999999", size: :sm, margin: :md, flex: 0
     end
   end
+
+  def border(color)
+    {
+      borderColor: color,
+      borderWidth: :light
+    }
+   end
+   
 end
