@@ -2,10 +2,12 @@
   Kamiflex.json(self) do
     alt_text "hello world!"
     bubble do
-      body **border("#FF0000") do
-        horizontal_box **border("#0000FF") do
-          text "Text1"
-          text "Text2"
+      body **border("#FF0000"), margin: "20px" do
+        blue_box margin: "20px" do
+          text "hello world!"
+        end
+        blue_box margin: "20px" do
+          text "hello world!"
         end
       end
     end
