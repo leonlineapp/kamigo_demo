@@ -4,15 +4,10 @@
     bubble do
       body **border("#FF0000") do
         blue_box do
-          green_box flex: 1 do
-            text "Box1"
-          end
-          green_box flex: 2 do
-            text "Box2"
-          end
+          text_message = "在 卡米哥 的「 深入 Flex Message - 以對話遊戲為例 」主題中，將會分享：使用 Flex Message 時的實作細節，包含遊戲風格的對話框介面、特殊樣式的按鈕、隱藏式的感應區、跨裝置的排版等。也會說明在設計一個新的 Flex Message 版型時，所採用的開發流程。"
+          text text_message, wrap: true, size: "9px"
         end
       end
     end
-   end
-    
+   end  
 )%>
