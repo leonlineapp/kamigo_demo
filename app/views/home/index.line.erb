@@ -1,30 +1,10 @@
-{
- "type": "text",
- "text": "快速回覆練習",
- "quickReply": {
-   "items": [
-     {
-       "type": "action",
-       "action": {
-         "type": "message",
-         "label": "Yes",
-         "text": "Yes"
-       }
-     },
-     {
-       "type": "action",
-       "action": {
-         "type": "cameraRoll",
-         "label": "Send photo"
-       }
-     },
-     {
-       "type": "action",
-       "action": {
-         "type": "camera",
-         "label": "Open camera"
-       }
-     }
-   ]
- }
-}
+<%= raw(
+ Kamiflex.json(self) do
+  alt_text "hello world!"
+  bubble do
+    body do
+      text "這是文字方塊，但你點點看", action: message_action("就算是文字方塊，照樣可以觸發 Action")
+    end
+  end
+ end
+)%>
