@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get "(*debug)", to: "home#debug"
+  # get "(*debug)", to: "home#debug"
+  
   # 首頁
   root to: "home#index"
   get "index", to: "home#index"
